@@ -12,4 +12,17 @@ Cabe destacar que para ello se necesitara usar un patron de diseño creacional.
 PAra comenzar, crearemos una nueva rama de trabajo "feature/logger" y nos posicionamos en ella para realizar la
 nueva funcionalidad.
 
+En este punto creamos el primer commit de nuestra nueva rama "doc:update PET_DOCUMENTATION.txt"
 
+Se ha decidido utilizar el patron de diseño SINGLETON con el cual usaremos para para asegurar que solo exista
+ una instancia de una clase que funcione en todo el programa y sirva como punto de acceso global a dicha instancia.
+
+Para ello crearemos la clase Logger y el método debug. Antes de crear la clase y siguiendo la estructura que mantiene
+DbService, crearemos un paquete para alojar nuestra nueva clase, este paquete se llamara "infrastructure.logger".
+Posteriormente, dentro de este paquete crearemos la clase Logger con su método debug.
+
+Una vez creada nuestra clase procedemos a implementar el metodo debug en los diferetenes TODOs que nos encontramos
+en la aplicacion.
+
+Una vez probado que el programa compila y funciona correctamente procedemos a realizar un nuevo commit
+"add logger.debug"

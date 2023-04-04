@@ -21,8 +21,13 @@ Para ello crearemos la clase Logger y el método debug. Antes de crear la clase 
 DbService, crearemos un paquete para alojar nuestra nueva clase, este paquete se llamara "infrastructure.logger".
 Posteriormente, dentro de este paquete crearemos la clase Logger con su método debug.
 
-Una vez creada nuestra clase procedemos a implementar el metodo debug en los diferetenes TODOs que nos encontramos
+Una vez creada nuestra clase procedemos a implementar el método debug en los diferetenes TODOs que nos encontramos
 en la aplicacion.
 
 Una vez probado que el programa compila y funciona correctamente procedemos a realizar un nuevo commit
 "add logger.debug"
+
+Una vez creado el último commit, procedemos a cambiarnos a la rama principal y realizar un merge con la rama que
+habíamos creado.
+Pero antes de cambiar de rama debemos crear un nuevo commit con la actualizacion de la documentacion 
+Por último creamos el commit "pets:final version" y procedemos a realizar el push a nuestro repositorio en GitHub

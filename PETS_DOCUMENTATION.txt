@@ -1,0 +1,12 @@
+EN ESTE DOCUMENTO EXPLICAREMOS LAS MODIFICACIONES QUE SE VAN A REALIZAR EN LA APLICACIÓN PETS:
+Se nos pide que creemos una clase que deberá implementar un método que deberá llamarse debug y que tendrá un
+único parámetro de tipo String. Dicho método lo que deberá hacer es escribir en la consola una línea que deberá
+componerse añadiendo el prefijo "[degug][contador]  - " al parámetro de entrada, como en los siguientes ejemplos:
+
+                [debug][23] - DbService. Dog added
+                [debug][24] - CatController.execute CATS
+
+En este punto realizamos el primer commit "doc:create PET_DOCUMENTATION.txt"
+
+
+

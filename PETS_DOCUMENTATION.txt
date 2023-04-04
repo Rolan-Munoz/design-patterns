@@ -31,3 +31,4 @@ Una vez creado el último commit, procedemos a cambiarnos a la rama principal y 
 habíamos creado.
 Pero antes de cambiar de rama debemos crear un nuevo commit con la actualizacion de la documentacion 
 Por último creamos el commit "pets:final version" y procedemos a realizar el push a nuestro repositorio en GitHub
+y procederemos a compartirlo con nuestros colaboradores.

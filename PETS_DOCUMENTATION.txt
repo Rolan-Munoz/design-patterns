@@ -8,5 +8,8 @@ componerse añadiendo el prefijo "[degug][contador]  - " al parámetro de entrad
 
 En este punto realizamos el primer commit "doc:create PET_DOCUMENTATION.txt"
 
+Cabe destacar que para ello se necesitara usar un patron de diseño creacional.
+PAra comenzar, crearemos una nueva rama de trabajo "feature/logger" y nos posicionamos en ella para realizar la
+nueva funcionalidad.
 
 

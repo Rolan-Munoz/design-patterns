@@ -1,0 +1,61 @@
+En este ejercicio tenemos como objetivo añadir la funcionalidad "undo" para revertir el último cambio
+realizado a través del editor de texto que facilita la aplicacion.
+
+Para crear dicha funcionalidad se ha analizado con detenimiento el programa que tenemos entre manos y se ha decidido
+que la mejor forma de poder implementar dicha funcionalidad es a traves del uso del patron de diseño comportamental
+MEMENTO.
+
+Memento es un patron de diseño que nos sirve para guardar una instantanea del estado actual, en este caso nos referimos
+a lo que haya creado el originator, en este caso es el editor de texto. Para ello nos es necesario crear la clase memento
+que como se ha dicho guarda la instantanea del estado actual. Acompañando a esta clase debemos crear la clase
+CareTaker, la cual guarda en forma de pila, una serie de mementos formando un historial de los mismos, a los cuales
+podremos acceder a traves de su índice.
+
+Llegados a este punto creamos la rama de trabajo feature/undo, en la cual implementaremos los cambios necesarios
+para desarrollar la funcionalidad que deseamos, para cuando este lista, realizar el merge a la rama principal.
+
+El siguiente paso que debemos realizar a continuation es crear la clase Memento, la cual guardara el estado actual y
+tendra un método para obterner dicho estado.
+
+Creamos el siguiente commit dentro de la rama de trabajo "create class memento"
+
+Una vez realizado el merge con la rama principal, habria que proceder a enviar a una rama de arreglo de bugs para
+solventar los problemas que nos hemos creado.
+
+Creamos el ultimo commit en nuestra rama principal que llamaremos "Revision Bug Version" ya que no hemos terminado de
+implementar la funcionalidad que queremos y debe ser revisado.
+
+A continuacion creamos la clase CareTaker, la cual como se ha dicho anteriormente guarda una pila de mementos, y crea
+un método restore para poder obtener el estado anterior.
+
+Creamos el siguiente commit dentr de la rama de trabajo "create class CareTaker"
+
+Una vez creada estas dos clases, el siguiente paso es crear el comando UndoCommand en el paquete Command, el cual
+creara el método undo que sera el encargado de realizar la funcionalidad de reestablecer el punto anterior del estado
+
+Creamos el siguiente commit en la rama de trabajo "create UndoCommand"
+
+Una vez creado el comando undo, nos disponemos a implementar en los demás commandos la funcionalidad de memento para
+guardar el estado, e imprimir pon pantalla un aviso de estado guardado.
+
+Tambien debemos hacer modificaciones en la commandFactory para usar la clase caretaker y que cada vez que se llame a uno
+de los commandos se cree un nuevo objeto de la clase CareTaker
+
+Creamos el siguiente commit en la rama de trabajo "update Commands and CommandFactory"
+
+Por ultimo mofificamos la clase run para que al lanzar nuestra aplicacion se llame a la clase CareTaker para ir guardando
+y restaurando los estados que queremos.
+
+Creamos el  commit en la rama de trabajo "update:ConsoleEditor"
+
+** El metodo undo no esta funcionando correctamente, se debe revisar tanto la clase memento para ver si toma
+correctamente la instantanea del momento, asi como la clase Caretaker si esta obteniendo correctamente el estado
+que deseamos del historial de mementos.
+
+** Tambien habria que revisar la creacion de UndoCommand y su implementacion en el programa para ver en que esta fallando
+
+Creamos un nuevo commit en nuestra rama de trabajo "update:EDITOR_DOCUMENTATION"
+
+
+
+
